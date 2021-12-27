@@ -6,39 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2022跨年旅行</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
-    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
+  <!-- AoS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/48f1bb2bac.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap 用CDN有可能toggle會無法使用-->
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <script src="./bootstrap.js"></script>
+   <!-- JQ -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+   integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+   crossorigin="anonymous"></script>
 </head>
 
 <body style="background:#fff5c7">
   <script>
     AOS.init();
   </script>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">2022跨年旅行</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li> -->
+          <li class="nav-item">
+            <a class="nav-link"  href="#info"><i class="fas fa-info-circle"></i> 主要資訊</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#sunnnyPlan"><i class="fas fa-sun"></i> 晴天行程</a>
           </li>
@@ -49,32 +46,31 @@
       </div>
     </div>
   </nav>
+<!-- banner -->
   <div class="" id="banner">
     <img src="./2022new.jpg" alt="" style="width: 100%;">
-
   </div>
-  <div class="container " id="info">
 
+  <!-- Main -->
+  <div class="container " id="info">
     <div class="row">
       <div class="col-12 pt-3 mb-5" style="background-color:white;border-radius: 25px;">
-        <div class="card my-5" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <h5><i class="fas fa-bullhorn"></i></h5>
+        <div class="card my-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <div class="card-header bg-success text-white">
-            集合地點
+            <i class="fas fa-info-circle"></i> 主要資訊
           </div>
           <div class="card-body">
             <!-- <h5 class="card-title">出發</h5> -->
-            <p class="card-text">集合時間</p>
-            <p class="card-text">備註：要帶毛巾牙刷，其他沐浴用品牙膏吹風機青旅都有提供。
-            </p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <p class="card-text"><i class="far fa-clock"></i> 集合時間</p>
+            
+            <p class="card-text"></p>
+            <p class="card-text"><i class="fas fa-h-square"></i> <a href="https://ruifangyihostel.business.site/" style="text-decoration: none;color: black;" target="_blank">瑞芳驛青年旅館</a><br>
+                                 入住時間：下午15:00-22:00 PM<br>
+                                 退房時間：中午11:00 AM<br>
+                                 備註：要帶毛巾牙刷，其他沐浴用品牙膏吹風機青旅都有提供。
+                                </p>
           </div> 
-        </div>
-        <h5>住宿資訊</h5>
-        <div data-aos="flip-up">
-          <a href="https://ruifangyihostel.business.site/" class="btn btn-info">瑞芳驛青年旅館</a>
-          <p>入住時間:下午15:00-22:00 PM<br>
-             退房時間:中午11:00 AM
-          </p>
         </div>
         </div>
       </div>
@@ -83,23 +79,23 @@
 
     <div class="row">
       <div class="col-12 pt-3" style="background-color:white;border-radius: 25px;">
-        <h5><i class="fas fa-sun"></i> 晴天行程</h5>
-
-        
-
-        <div class="card my-5" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <h5 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"><i class="fas fa-sun"></i> 晴天行程</h5>
+        <div class="card my-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <div class="card-header bg-warning ">
             基隆宿舍官邸
           </div>
           <div class="card-body">
             <h5 class="card-title">基隆宿舍官邸</h5>
-            <p class="card-text">交通方式：</p>
-            <p class="card-text">1.火車搭到八斗子車站換791搭到中正區行政大樓</p>
-            <p class="card-text">2.火車搭到基隆車站換791搭到中正區行政大樓</p>
+            <p class="card-text">交通方式：
+              <ol>
+                <li>火車搭到八斗子車站換791搭到中正區行政大樓</li>
+                <li>火車搭到基隆車站換791搭到中正區行政大樓</li>
+              </ol>
+            </p>
             <a href="https://www.klccab.gov.tw/AboutBureaus/Details/2ca4f823-ce85-4eaf-a2b3-5b50e8141b8f?page=1"
-              class="btn btn-warning btn-sm">介紹</a>
+              class="btn btn-outline-warning btn-sm" target="_blank">介紹</a>
             <a href="https://ebus.gov.taipei/EBus/VsSimpleMap?gb=0&routeid=0400079100" target="_blank"
-              class="btn btn-warning btn-sm"><i class="fas fa-bus"></i> 791</a>
+              class="btn btn-outline-warning btn-sm"><i class="fas fa-bus"></i> 791</a>
           </div>
         </div>
 
@@ -109,12 +105,15 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">正濱漁港</h5>
-            <p class="card-text">交通方式：</p>
-            <p class="card-text">1.從中正區行政大樓搭基隆市公車103(中正路)到中正路正濱路口下車</p>
-            <p class="card-text">2.從基隆宿舍官邸走路到正濱漁港約20分鐘</p>
-            <a href="#" class="btn btn-warning btn-sm">介紹</a>
+            <p class="card-text">交通方式：
+              <ol>
+                <li> 從中正區行政大樓搭基隆市公車103(中正路)到中正路正濱路口下車</li>
+                <li>從基隆宿舍官邸走路到正濱漁港約20分鐘</li>
+              </ol>
+            </p>
+            <a href="https://may1215may.pixnet.net/blog/post/405551415" class="btn btn-outline-warning btn-sm" target="_blank">介紹</a>
             <a href="https://ebus.klcba.gov.tw/klebus/dmap/Tw/Map?rid=1031&sec=1" target="_blank"
-              class="btn btn-warning btn-sm"><i class="fas fa-bus"></i> 103(中正路)</a>
+              class="btn btn-outline-warning btn-sm"><i class="fas fa-bus"></i> 103(中正路)</a>
           </div>
         </div>
 
@@ -124,9 +123,15 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">和平島公園</h5>
-            <p class="card-text">交通方式：</p>
-            <p class="card-text">1.</p>
-            <a href="#" class="btn btn-warning btn-sm">介紹</a>
+            <p class="card-text">交通方式：
+              <ol>
+                <li>從正濱路口搭101（祥豐街）往阿拉寶灣到和平島公園</li>
+                <li>步行約25分鐘</li>
+              </ol>
+           </p>
+            <a href="https://bobowin.blog/p1546/" class="btn btn-outline-warning btn-sm" target="_blank">介紹</a>
+            <a href="https://ebus.klcba.gov.tw/klebus/dmap/Tw/Map?rid=1013&sec=1" target="_blank"
+              class="btn btn-outline-warning btn-sm"><i class="fas fa-bus"></i> 101(祥豐街)</a>
           </div>
         </div>
 
@@ -136,9 +141,18 @@
           </div>
           <div class="card-body">
             <h5 class="card-title">八斗子夜市</h5>
-            <p class="card-text">交通方式：</p>
-            <p class="card-text">1.</p>
-            <a href="#" class="btn btn-warning btn-sm">介紹</a>
+            <p class="card-text">交通方式：
+            <ol>
+              <li>(回到正濱漁港附近)從二信分社搭103（中正路）/104（中正路）/791到漁貨直銷中心(碧砂休閒港區)或是義胞新村</li>
+            </ol>
+            </p>
+            <a href="https://journey.tw/badozi-night-market/" class="btn btn-outline-warning btn-sm" target="_blank">介紹</a>
+            <a href="https://ebus.klcba.gov.tw/klebus/dmap/Tw/Map?rid=1031&sec=1" target="_blank"
+              class="btn btn-outline-warning btn-sm"><i class="fas fa-bus"></i> 103(中正路)</a>
+            <a href="https://ebus.klcba.gov.tw/klebus/dmap/Tw/Map?rid=1041&sec=1" target="_blank"
+              class="btn btn-outline-warning btn-sm"><i class="fas fa-bus"></i> 104(中正路)</a>
+            <a href="https://ebus.gov.taipei/EBus/VsSimpleMap?gb=0&routeid=0400079100" target="_blank"
+              class="btn btn-outline-warning btn-sm"><i class="fas fa-bus"></i> 791</a>
           </div>
         </div>
 
@@ -148,9 +162,16 @@
           </div>
           <div class="card-body">
             <h5 class="card-title"> 瑞芳夜市/瑞芳美食廣場</h5>
-            <p class="card-text">交通方式：</p>
-            <p class="card-text">1.</p>
-            <a href="#" class="btn btn-warning btn-sm">介紹</a>
+            <p class="card-text">交通方式：
+              <ol>
+                <li>(回到正濱漁港附近)從二信分社搭公車103（中正路）/791到八斗子車站，再搭火車到瑞芳車站</li>
+              </ol>
+            </p>
+            <a href="https://tendercarelife.pixnet.net/blog/post/217509402-%E7%91%9E%E8%8A%B3%E4%B8%80%E6%97%A5%E9%81%8A%E7%91%9E%E8%8A%B3%E5%A4%9C%E5%B8%82%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6%E7%91%9E%E8%8A%B3%E6%99%AF%E9%BB%9E%E5%B0%B1%E5%9C%A8%E7%91%9E" class="btn btn-outline-warning btn-sm" target="_blank">介紹</a>
+            <a href="https://ebus.klcba.gov.tw/klebus/dmap/Tw/Map?rid=1031&sec=1" target="_blank"
+              class="btn btn-outline-warning btn-sm"><i class="fas fa-bus"></i> 103(中正路)</a>
+            <a href="https://ebus.gov.taipei/EBus/VsSimpleMap?gb=0&routeid=0400079100" target="_blank"
+              class="btn btn-outline-warning btn-sm"><i class="fas fa-bus"></i> 791</a>
           </div>
         </div>
 
@@ -165,17 +186,15 @@
 
     <div class="row">
       <div class="col-12 pt-3" style="background-color:white;border-radius: 25px;">
-        <h5><i class="fas fa-umbrella"></i> 雨天行程</h5>
-
-        <div class="card my-5" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+        <h5 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"><i class="fas fa-umbrella"></i> 雨天行程</h5>
+        <div class="card my-3" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <div class="card-header bg-info text-white">
             海科館
           </div>
           <div class="card-body">
             <h5 class="card-title"> 海科館</h5>
-            <p class="card-text">交通方式：</p>
-            <p class="card-text">1.</p>
-            <a href="#" class="btn btn-warning btn-sm">介紹</a>
+            <a href="https://www.nmmst.gov.tw/chhtml/content/442" class="btn btn-outline-info btn-sm" target="_blank">交通方式</a>
+            <a href="https://www.nmmst.gov.tw/chhtml/content/215" class="btn btn-outline-info btn-sm" target="_blank">介紹</a>
           </div>
         </div>
 
@@ -186,14 +205,17 @@
           <div class="card-body">
             <h5 class="card-title"> 瑞芳夜市/瑞芳美食廣場</h5>
             <p class="card-text">交通方式：</p>
-            <p class="card-text">1.</p>
-            <a href="#" class="btn btn-warning btn-sm">介紹</a>
+            <ol>
+              <li>搭火車（深澳線）從海科館到瑞芳車站</li>
+            </ol>
+            <a href="https://tendercarelife.pixnet.net/blog/post/217509402-%E7%91%9E%E8%8A%B3%E4%B8%80%E6%97%A5%E9%81%8A%E7%91%9E%E8%8A%B3%E5%A4%9C%E5%B8%82%E7%BE%8E%E9%A3%9F%E6%8E%A8%E8%96%A6%E7%91%9E%E8%8A%B3%E6%99%AF%E9%BB%9E%E5%B0%B1%E5%9C%A8%E7%91%9E" class="btn btn-outline-info btn-sm" target="_blank">介紹</a>
           </div>
         </div>
 
       </div>
     </div>
   </div>
+  <footer class="bg-light text-center py-3 mt-5 fw-bolder"><i class="fas fa-child"></i> HAPPY NEW YEAR <i class="fas fa-child"></i></footer>
 </body>
 
 </html>
